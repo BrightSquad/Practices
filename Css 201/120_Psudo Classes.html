@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Selectors</title>
+    <style>
+         .box{
+        
+            height: 20px;
+            border: 1px solid blue;
+
+        }
+        
+
+        #parent .box + .box{
+            background-color: red;
+            
+        }
+
+        
+          
+        .box:not(.dontselectme) {
+            background-color: blue;
+        }
+
+        .box:hover{
+            background-color: grey;
+        }
+        .box:nth-child(7){
+            background-color: green;
+            color: white;
+        }
+
+        
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box dontselectme" do></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box">Select Me</div>
+
+
+    
+</body>
+</html>
