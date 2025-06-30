@@ -44,11 +44,31 @@
 
 
 
-const name = "Success";
-if (name == "Bright") {
-    console.log("Welcome Mr Bright");   
-} else if (name == "PETER OBI") {
-    console.log("Welcome Mr Peter");
-} else{
-    console.log ("Welcome guest")
-}
+// const name = "Success";
+// if (name == "Bright") {
+//     console.log("Welcome Mr Bright");   
+// } else if (name == "PETER OBI") {
+//     console.log("Welcome Mr Peter");
+// } else{
+//     console.log ("Welcome guest")
+// }
+
+
+
+// TOPIC: Javascript Objects
+
+// const Lion = {
+//     "Name": "lION",
+//     "Action": "Roar",
+//     "Habitat": "Savannah",
+//     "Dectator" : "Bright",
+//     "  Owner" :  "Obaji",
+// }
+
+
+// Topic Methods of pulling Strings 
+
+// const course = "Javascript 101";
+
+// course.search("coding")
+
