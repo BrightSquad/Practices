@@ -7,22 +7,46 @@
 
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
         body{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             text-decoration: none;
-            background-image: url("images/computer.jpg.jpg");
+            background: #190364;
+            
+           /* background-image: linear-gradient(linear-gradient(90deg,rgba(31, 43, 35, 1) 0%, rgba(2, 2, 8, 1) 51%, rgba(8, 8, 1, 1) 74%, rgba(36, 36, 16, 1) 93%); */
+
+            /* background-image: url("https://unicorn-images.b-cdn.net/ddf5e475-d8dd-4c6f-8fed-8ef1f46a48d8?optimizer=gif"); */
         }
         .navbar{
-            background-color: #190364;
+            background-color: #fff;
             font-family: sans-serif;
-            padding: 2px 25px;
-            ;
-         
-            /* border-radius: 1px; */
+            padding: 5px 15px;
+            position: fixed;
+            width: 880px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);    
            
+        }
+        .bacground-section{
            
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 200px;
+        }
+        .bacground-section img{
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            filter: brightness(80%);
+            margin-top: 80px;
+            
         }
 
         .divnav{
@@ -32,44 +56,162 @@
 
         }
         .logo a img {
-            width: 40px
+            width: 40px;
+           
             
         }
+      
         li {
             list-style: none;
             display: inline-block;
-            color: white;
+            color: #190364;
         }
         li a{
-            color: white;
-            font-size: 15px;
+            color: #190364;
+            font-size: 10px;
             font-weight: bold;
-            margin: 25px;
+            margin: 10px;
             text-decoration: none;
+            text-transform: capitalize;
         }
         li a:hover{
             color: #001BFF;
         }
         button{
-            background-color: #001BFF;
-            margin-left: 10px;
+            /* background-color: #001BFF; */
+            margin-left: 1px; 
             border-radius: 10px;
+            padding: 5px 15px; 
+            border: none;
+            transition: background-color 2.5s, color 8s, padding 10px, border_radius 10px;
+            
+         }
+         button.login{
+            background-color: #001BFF;
+            border-radius: 3px;
+            transition: background-color 2.2s, color 2.2s;
+         }
+
+
+         button.login:hover{
+            background-color: #190364;
+            color: #001BFF;
          }
          button a{
             color: white;
+            text-decoration: none;
+            
+            
+            
+           
          }
          button a:hover{
             color: white;
          }
+        
+         
 
-         h1{
+        .text-background h1{
             color: #190364;
             /* width: 200px; */
             text-align: right;
+            margin-right: 10px;
+            margin-top: 45%;
+            
          }
-        .LLC{
-            position: absolute;
+          .text-background p, h1{
+            margin-bottom: 3%;
+            
         }
+       
+        
+        .container img{
+            border-radius: 5px;
+            width: 200px;
+            margin-bottom: 10px;
+
+            
+
+        }
+        .text-background{
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            color: #fff;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+           
+        }
+        .text-background h1{
+            margin-top: 45%;
+            color: #fff;
+            font-size: 32px;
+        }
+
+
+
+        div.image img{
+            width: 300px;
+            position: absolute;
+            border-radius: 50px;
+            top: -10%;
+            
+            left: 110%;
+            
+
+        }
+        .SignIn a{
+            color: #190364;
+         
+
+            
+
+            
+        }
+        .SignIn a:hover{
+           color: #001BFF;
+            
+            
+
+        }
+
+ .about-section {
+    padding: 60px 30px;
+    background-color: #fff;
+    color: #190364;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+.about-section {
+    padding: 60px 30px;
+    background-color: #fff;
+    color: #190364;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #001BFF;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+       
+            
+
+
+        
+
+       
+      
        
         
        
@@ -82,28 +224,44 @@
 
 <nav class="navbar">
     <div class="divnav">
-        <div class="logo"> <a href="https://google.com" target="_blank"> <img src="images/Bigital transparent white.png" alt="break me">    </a>   
+        <div class="logo"> <a href="https://google.com" target="_blank"> <img src="images/Bigital logo icon navy blue.png" alt="break me">    </a>   
         </div>
         <ul>
              <li> <a href="#" > ABOUT</a> </li>
              <li> <a href="#" > SERVICES </a> </li>
             <li> <a href="#" > CONTACT </a> </li>
-            <button> <a href="#"> SignIn</a></button>
+            <button class="SignIn"> <a href="#"> SignIn</a></button>
+            <button class="login"><a href="#">Get Started</a></button>
         </ul>
     </div>
-
-
-
-
 </nav>
 
-<button>Get free LLC </button>
+<div class="bacground-section">
+    <!-- <img src="https://unicorn-images.b-cdn.net/c510d0ae-399b-42cf-a195-3c9b1a7df484?optimizer=gif" alt=""> -->
+    <div class="text-background">
 
 
+          <h1>Start your  Global Business Today!</h1>
+          <p>We help you register your <br>business in the USA, <br>UK, Canada, and more.</p>
+      
+    <div class="image">
+        <img src="https://unicorn-images.b-cdn.net/c510d0ae-399b-42cf-a195-3c9b1a7df484?optimizer=gif"  alt=""></div>
+        
+    </div>
+
+    <!-- <div class="about-section" id="about">
+  <h2>Why Choose Us?</h2>
+  <p>
+    With years of experience helping startups and <br> businesses register in countries like the USA, UK, <br> and Canada, 
+    we provide expert support and fast, secure documentation.
+  </p>
+  <p>
+    Whether you're a first-time founder <br>or an established company going global, 
+    Bigital Tech makes it easy to start and grow your business internationally.
+  </p>
+</div> -->
 
 
-
-
-    
+  
 </body>
 </html>

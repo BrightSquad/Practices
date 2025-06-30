@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Awesome Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style type="text/css">
+    /* Your provided Font Awesome CSS */
+    :root, :host {
+      --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+      --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+      --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+      --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+      --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+      --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    }
+
+    svg:not(:root).svg-inline--fa,
+    svg:not(:host).svg-inline--fa {
+      overflow: visible;
+      box-sizing: content-box;
+    }
+
+    .svg-inline--fa {
+      display: var(--fa-display, inline-block);
+      height: 1em;
+      overflow: visible;
+      vertical-align: -0.125em;
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em;
+    }
+
+    .fa-2x {
+      font-size: 2em;
+    }
+
+    .icon-sample {
+      margin: 50px;
+      font-size: 3em;
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Font Awesome Icon Example</h1>
+  <p>Here’s a sample icon using your CSS setup:</p>
+
+  <div class="icon-sample">
+    <i class="fas fa-star fa-2x"></i> Star Icon
+  </div>
+
+</body>
+</html>

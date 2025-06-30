@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+
+        }
+        #box{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        #test1{
+            flex-basis: 100%;
+            border: 10px solid green;
+            padding: 20px;
+        }
+        #test2{
+            flex-basis: 20%;
+            border: 10px solid green;
+            padding: 20px;
+        }
+        #content {
+            flex-basis: 80%;
+            border: 10px solid green;
+            padding: 20px;
+
+        }
+        @media(max-width: 1000px) {
+            #test1, #test2{
+                flex-basis: 100%;
+                border: 10px;
+
+
+            }
+            @media (min-width: 410px) {
+                #content{
+                    display: none ;
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="test1">
+            Navbar in here 
+        </div>
+
+        <div id="test2">
+            Sidebar in here
+        </div>
+        
+        <div id="content">
+            content in here
+        </div>
+
+
+
+    </div>
+</body>
+</html>
