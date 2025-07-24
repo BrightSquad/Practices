@@ -143,8 +143,52 @@
 
 // DO NOT REAPET YOURSELF(DRY)
 
-function addNumbers (num1 , num2) {
-    const total = num1 + num2;
-    return total;
+
+
+// function addNumbers() {
+//     return "an answer";  
+
+
+// }
+// const total = addNumbers();
+
+
+// function addNumbers(num1, num2){
+//     const total = num1 + num2
+//     return total; 
+// }
+// const addedTotal= addNumbers ("1","9");
+
+
+// function multiply(a, b=1){
+//     if (a ===undefined){
+//         return"Pease give a number";
+//     }
+//     return a*b;
+// }
+// console.log(multiply(5,8));
+
+//TOPIC  REST OPERATOR
+
+// function addNumbers(greetingName,...numbers){
+//     let total =0;
+//     for(index in numbers) {
+//         total = total + numbers[index];
+
+//     }
+//     return `${greetingName}; the total is ${total}`;
+
+// }
+// const newTotal = addNumbers("Bright", 1, 4, 7, 213);
+// console.log(newTotal);
+
+
+// OBJECTS WITH FUNCTION
+const person ={
+"name": "Bright",
+"age": 29,
+"height": "5"
 }
-const total = addNumbers(1, 9)
+person ["favfood"]
+
+
