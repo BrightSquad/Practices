@@ -187,8 +187,15 @@
 const person ={
 "name": "Bright",
 "age": 29,
-"height": "5"
+"height": "5",
+"speak" : function(want ="cookies") {
+    console.log(`Roar, i want ${want}`);
+},
+talk() {
+    console.log(`"i am talking"`)
 }
-person ["favfood"]
+}
+person.speak("Pizza")
+
 
 
